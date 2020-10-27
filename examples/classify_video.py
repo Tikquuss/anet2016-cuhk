@@ -55,9 +55,9 @@ lb_list = db.get_ordered_label_list()
 
 idx = np.argsort(scores)[::-1]
 
-print '----------------Classification Results----------------------'
+print('----------------Classification Results----------------------')
 for i in xrange(10):
     k = idx[i]
-    print lb_list[k], scores[k]
+    print(lb_list[k], scores[k])
 
 

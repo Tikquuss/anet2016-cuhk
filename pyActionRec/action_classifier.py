@@ -157,7 +157,7 @@ class ActionClassifier(object):
             all_scores.append(frm_scores)
             end = time.clock()
             elapsed = end - start
-            print "frame sample {}: {} second".format(cnt, elapsed)
+            print("frame sample {}: {} second".format(cnt, elapsed))
 
         # aggregate frame-wise scores
         agg_scores = []
@@ -169,7 +169,7 @@ class ActionClassifier(object):
 
         all_end = time.clock()
         total_time = all_end - all_start
-        print "total time: {} second".format(total_time)
+        print("total time: {} second".format(total_time))
 
         return final_scores, all_scores, total_time
 

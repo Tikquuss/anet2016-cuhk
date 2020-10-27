@@ -1,6 +1,9 @@
 import logging
 import sys
 
+import os
+sys.path.append(os.path.join(os.environ['ANET_HOME'], "pyActionRec", "utils"))
+
 from media_files import *
 
 _formatter = logging.Formatter('%(asctime)s - %(filename)s:%(lineno)d - [%(levelname)s] %(message)s')
